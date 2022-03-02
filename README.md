@@ -1,5 +1,5 @@
 # musical-player
 
-A weather application connected to the openweather API
+A musical audio player with an owl carousel
 
 View site here: http://mandeepsajjan.com/musical-player/
