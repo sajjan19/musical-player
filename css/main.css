@@ -1,0 +1,854 @@
+/*  Mandeep Sajjan 
+    A01237012
+    Artifact 1  */
+
+body {
+    background-color: whitesmoke;
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: blue;
+    font-family: 'Play', sans-serif;
+    font-weight: 600;
+}
+
+#container {
+    width: 90%;
+    margin: 0px auto;
+}
+
+
+/* Header Logo */
+
+#navbar {
+    background-color: rgba(0, 0, 0, .7);
+    box-shadow: 0px 1px 10px white;
+    padding-bottom: 20px;
+}
+
+#navbar #logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar #logo h1 {
+    font-family: 'Ovo', serif;
+    font-size: 40px;
+    position: relative;
+    margin-left: 15px;
+    top: 10px;
+    background: #CF0000;
+    background: -webkit-linear-gradient(to right, #CF0000 0%, #5648CF 100%);
+    background: -moz-linear-gradient(to right, #CF0000 0%, #5648CF 100%);
+    background: linear-gradient(to right, #CF0000 0%, #5648CF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#navbar #logo h1:hover {
+    font-size: 42px;
+    background: #5648CF;
+    background: -webkit-linear-gradient(to right, #5648CF 0%, #CF0000 100%);
+    background: -moz-linear-gradient(to right, #5648CF 0%, #CF0000 100%);
+    background: linear-gradient(to right, #5648CF 0%, #CF0000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#logo img {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 75px;
+    width: 75px;
+    margin-right: 15px;
+}
+
+
+/* Navigation */
+
+nav {
+    color: blue;
+    text-align: center;
+    font-size: 1.25em;
+    padding: 1em;
+}
+
+nav a {
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(151, 151, 255);
+}
+
+nav a:hover {
+    font-size: 21px;
+    color: rgb(255, 151, 151);
+}
+
+
+/* Header Title */
+
+#title {
+    text-align: center;
+    margin: 25px auto;
+    cursor: default;
+}
+
+#title h1 {
+    font-family: 'Ovo', serif;
+    font-size: 60px;
+    background-color: rgba(0, 0, 0, .3);
+    box-shadow: 0px 0px 5px white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 0px 0px 5px white;
+}
+
+.overlay h2 {
+    color: white;
+    margin: 25px auto;
+    text-align: center;
+    font-size: 2em;
+}
+
+.overlay h2 .musicaltrip {
+    font-family: 'Ovo', serif;
+    /* text-shadow: 1px 1px 1px white; */
+    font-size: 35px;
+    position: relative;
+    background: #ffa7a7;
+    background: -webkit-linear-gradient(to right, #ffa7a7 0%, #988dff 100%);
+    background: -moz-linear-gradient(to right, #ffa7a7 0%, #988dff 100%);
+    background: linear-gradient(to right, #ffa7a7 0%, #988dff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#title h1:hover {
+    font-size: 62px;
+    box-shadow: 0px 0px 10px blue;
+    color: rgb(20, 20, 20);
+    text-shadow: 2px 2px 3px red, -2px -2px 3px blue;
+}
+
+.anchorLink {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.anchorLink a {
+    color: rgb(101, 101, 255);
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 5px white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.anchorLink a:hover {
+    box-shadow: 0px 0px 10px 1px rgb(101, 101, 255);
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* landing page */
+
+.landingpage-img img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px lightskyblue;
+}
+
+.landingpage-img {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.description {
+    margin: 30px auto;
+    width: 90%;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px whitesmoke;
+}
+
+.description p {
+    color: white;
+    margin: 0 25px;
+}
+
+.description h1 {
+    color: white;
+}
+
+.description h1 {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 25px;
+    color: lightskyblue;
+}
+
+.description p a {
+    color: white;
+}
+
+.description p a:hover {
+    color: lightskyblue;
+}
+
+.sub-des {
+    display: flex;
+    padding: 0px 25px;
+    align-items: center;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.sub-des img {
+    padding: 20px;
+}
+
+.albums {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    /* background-color: rgba(255, 255, 255, 0.6); */
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 10px;
+    /* overflow: hidden; */
+}
+
+.albums img {
+    margin: 0 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.albums div {
+    /* flex-basis: 20%; */
+    align-content: center;
+}
+
+.albums p {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.info {
+    text-align: center;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.info h1 {
+    margin-bottom: 10px;
+}
+
+.info .buttons {
+    margin-bottom: 10px;
+}
+
+.info .whatismusic,
+.info .top500 {
+    border-radius: 5px;
+    color: black;
+    padding: 5px;
+    background-color: lightskyblue;
+    cursor: pointer;
+    margin: 0 5px;
+    box-shadow: 0px 0px 5px white;
+}
+
+.info .whatismusic:hover,
+.info .top500:hover {
+    box-shadow: 0px 0px 10px black;
+    background-color: rgb(0, 157, 255);
+    color: white;
+}
+
+
+/* Albums */
+
+.item h2 {
+    text-align: center;
+    margin: 10px auto;
+    color: lightgoldenrodyellow;
+    font-size: 25px;
+}
+
+.item {
+    padding: 5px;
+}
+
+.item img {
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 5px rgb(200, 200, 255);
+}
+
+.item h3,
+.item h3 a {
+    margin: 15px 10px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+.item a {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: 'Ovo', serif;
+    padding: 2px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item h3 a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Ovo', serif;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Navigation Buttons */
+
+.owl-nav {
+    color: whitesmoke;
+    font-size: 25px;
+    margin-bottom: 10px;
+    /* border-bottom: 3px solid rgba(108, 255, 164, 0.6); */
+    padding-bottom: 10px;
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+    background: none !important;
+    outline: none !important;
+    opacity: .9;
+    text-shadow: 1px 1px 5px blue;
+    transition: all .4s ease;
+}
+
+.owl-nav .owl-prev:hover {
+    color: rgb(255, 119, 119) !important;
+}
+
+.owl-nav .owl-next:hover {
+    color: rgb(119, 255, 160) !important;
+}
+
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover {
+    background: none !important;
+    outline: none !important;
+    font-weight: bold !important;
+    opacity: 1;
+}
+
+
+/* Play Pause Carousel button */
+
+.slideShowButtons h2 {
+    font-family: 'Play', sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.slideShowButtons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.slideShowButtons .playButton,
+.slideShowButtons .stopButton {
+    margin: 10px 5px;
+    font-family: 'Ovo', serif;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.slideShowButtons .playButton {
+    background-color: lightgreen;
+    box-shadow: 0px 0px 5px lightgreen;
+    padding: 10px 40px;
+}
+
+.slideShowButtons .playButton:hover {
+    background-color: black;
+    color: lightgreen;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.slideShowButtons .stopButton {
+    background-color: grey;
+    box-shadow: 0px 0px 5px grey;
+    padding: 10px 55px;
+}
+
+.slideShowButtons .stopButton:hover {
+    background-color: black;
+    color: grey;
+    box-shadow: 0px 0px 5px lightgreen;
+}
+
+
+/* Audio Player Buttons */
+
+.audioPlayer {
+    text-align: center;
+    margin: 0px auto;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 3px solid rgba(108, 255, 164, 0.6);
+    width: 50%;
+}
+
+.audioTitle {
+    text-align: center;
+    font-size: 25px;
+    margin: 0px auto;
+    padding: 10px;
+    padding-top: 25px;
+    border-top: 3px solid rgba(108, 255, 164, 0.6);
+    width: 50%;
+    color: lightgreen;
+}
+
+.audioPlayer h3 {
+    font-size: 20px;
+    padding: 5px;
+    color: whitesmoke;
+}
+
+#audioPlayButton {
+    padding: 10px 24px;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 10px;
+    height: 75px;
+    width: 75px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-size: 25%;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    cursor: pointer;
+    background: url("../img/play.png");
+}
+
+#audioPlayButton:hover {
+    background-color: rgba(100, 255, 100, .3);
+}
+
+.playMusic {
+    background: url("../img/play.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.pauseMusic {
+    background: url("../img/pause.png") !important;
+}
+
+
+/* Volume */
+
+#volumeControl {
+    display: inline-block;
+    margin-left: 15px;
+    padding: 5px;
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(50, 50, 50, .6);
+}
+
+#volumeLabel {
+    background: url("../img/volume.png");
+    background-color: rgba(100, 100, 100, .6);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    height: 50px;
+    background-size: 75%;
+    width: 50px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+#volumeLabel:hover {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+#volume {
+    position: relative;
+    top: -22px;
+}
+
+
+/* Song List */
+
+#favSongsTitle {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: lightskyblue;
+    text-shadow: 1px 1px 1px red;
+}
+
+#favouriteSongs {
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 90%;
+    margin: 10px auto;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+
+#favouriteSongs h4 {
+    font-family: 'Ovo', serif;
+    border-bottom: 2px blue solid;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: lightcoral;
+}
+
+#favouriteSongs div {
+    color: white;
+}
+
+#favouriteSongs div a {
+    color: white;
+}
+
+#favouriteSongs div li:hover,
+#favouriteSongs div a:hover {
+    font-size: 12px;
+    font-family: 'Ovo', serif;
+}
+
+#favouriteSongs div ol {
+    text-align: center;
+    margin: 15px;
+}
+
+#favouriteSongs div ol li {
+    margin: 15px;
+    line-height: 1.2;
+}
+
+.artist {
+    color: lightskyblue;
+    font-style: italic;
+}
+
+
+/* Return to top  */
+
+.return {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.return h2 a {
+    font-family: 'Pricedown', 'Ovo', serif;
+    color: white;
+    font-size: 45px;
+    text-decoration: none;
+    text-shadow: 0px 0px 5px red;
+}
+
+.return h2 a:hover {
+    color: black;
+    font-size: 50px;
+    text-decoration: overline;
+}
+
+
+/* Footer */
+
+#footer {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    text-align: center;
+}
+
+#footer a {
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(151, 151, 255);
+}
+
+#footer a:hover {
+    color: rgb(255, 151, 151);
+}
+
+#footer p {
+    margin-top: 10px;
+}
+
+
+/* 2 column booking form */
+
+.contactTitle {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+#two-col-form {
+    color: white;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#two-col-form h3 {
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: lightgreen;
+}
+
+#leftcol {
+    width: 50%;
+    /* margin-left: 50px; */
+}
+
+#leftcol input,
+#leftcol textarea {
+    border-radius: 5px;
+}
+
+#leftcol div,
+#rightcol div,
+iframe {
+    padding: 5px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+#leftcol input:hover,
+#leftcol textarea:hover {
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+#leftcol div .optional {
+    color: lightskyblue;
+}
+
+#rightcol {
+    width: 50%;
+    /* margin-right: 50px; */
+}
+
+#rightcol p,
+#rightcol p a {
+    color: lightskyblue;
+}
+
+.required {
+    color: red;
+}
+
+
+/* submit buttons for contact and forms pages */
+
+.submitbutton {
+    align-content: center;
+    box-shadow: 0px 0px 0px 2px #9fb4f2;
+    background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+    background-color: #7892c2;
+    border-radius: 10px;
+    border: 1px solid #4e6096;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Times New Roman;
+    font-size: 20px;
+    padding: 15px 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #283966;
+    margin-right: 10px;
+}
+
+.submitbutton:hover {
+    background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+    background-color: #476e9e;
+}
+
+.submitbutton:active {
+    position: relative;
+    top: 1px;
+}
+
+
+/* clear buttons for contact and forms pages */
+
+.clearbutton {
+    box-shadow: 0px 0px 0px 2px #9fb4f2;
+    background: linear-gradient(to bottom, #ededed 5%, #ffffff 100%);
+    background-color: #ededed;
+    border-radius: 10px;
+    border: 1px solid #4e6096;
+    display: inline-block;
+    cursor: pointer;
+    color: #000000;
+    font-family: Times New Roman;
+    font-size: 20px;
+    padding: 15px 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #283966;
+    margin-left: 10px;
+}
+
+.clearbutton:hover {
+    background: linear-gradient(to bottom, #ffffff 5%, #ededed 100%);
+    background-color: #ffffff;
+}
+
+.clearbutton:active {
+    position: relative;
+    top: 1px;
+}
+
+.aboutimage {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.aboutimage img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px lightskyblue;
+}
+
+.aboutimage:hover {
+    box-shadow: 0px 0px 10px black;
+    border-radius: 5px;
+}
+
+.image_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image_overlay_blur {
+    backdrop-filter: blur(5px);
+}
+
+.image_overlay>* {
+    transform: translateY(30px);
+    transition: transform 0.3s;
+}
+
+.image_overlay:hover {
+    opacity: 1;
+}
+
+.image_overlay:hover>* {
+    transform: translateY(0px);
+}
+
+.image_title {
+    font-size: 1.5em;
+}
+
+.aboutdescription {
+    margin: 30px auto;
+    width: 50%;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px whitesmoke;
+}
+
+.aboutdescription p {
+    color: white;
+    margin: 25px;
+}
+
+.aboutdescription p a {
+    color: white;
+}
+
+.aboutdescription p a:hover {
+    color: lightskyblue;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 992px) {
+    #favouriteSongs {
+        display: flex;
+    }
+    #favouriteSongs h4 {
+        color: lightskyblue;
+    }
+    #favouriteSongs div {
+        padding-left: 20px;
+        padding-right: 10px;
+        flex: 1;
+    }
+    #favouriteSongs div li:hover,
+    #favouriteSongs div a:hover {
+        font-size: 12px;
+        font-family: 'Ovo', serif;
+    }
+    #favouriteSongs div ol {
+        text-align: left;
+        margin: 15px;
+    }
+    #favouriteSongs div ol li {
+        margin: 15px;
+        line-height: 1.2;
+    }
+}

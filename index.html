@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Mandeep Sajjan -->
+    <!-- A01237012 -->
+    <!-- Artifact 1 -->
+
+    <title>Mandeep Sajjan Artifact 1</title>
+
+    <!-- Google Fonts -->
+    <!-- OVO for titles (Serif Font) -->
+    <!-- Play font for paragraphs (Sans Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ovo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+
+    <!-- Owl Carousel external linking -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div id="navbar">
+        <header id="logo">
+            <a href="index.html">
+                <img src="img/musiclogo.png" alt="logo for Musical Trip">
+                <h1>Musical Trip</h1>
+            </a>
+        </header>
+
+    </div>
+
+    <!-- Title -->
+    <header id="title">
+        <h1>Track List</h1>
+    </header>
+
+    <div id="container">
+        <!-- Give user control of pause and autoplay the carousel -->
+        <div class="slideShowButtons">
+            <h2>Toggle or Pause the Carousel</h2>
+            <button class="playButton">Auto-Toggle </button>
+            <button class="stopButton">Pause</button>
+        </div>
+
+        <!-- Anchor link to favourite songs -->
+        <h3 class="anchorLink">
+            <a href="#favSongsTitle">Click here to view my favourite songs</a>
+        </h3>
+
+        <!-- Owl Carousel -->
+        <div class="owl-carousel owl-theme" id="songList">
+            <div class="item">
+                <h2>Pop</h2>
+                <img src="img/pop.jpg" alt="pop music">
+                <h3><a href="#" data-track="media/pop.mp3"> Play </a></h3>
+            </div>
+            <div class="item">
+                <h2>Rap</h2>
+                <img src="img/rap.jpg" alt="rap music">
+                <h3><a href="#" data-track="media/rap.mp3"> Play</a></h3>
+            </div>
+            <div class="item">
+                <h2>Bhangra</h2>
+                <img src="img/bhangra.jpg" alt="bhangra bollywood music">
+                <h3><a href="#" data-track="media/indian.mp3"> Play</a></h3>
+            </div>
+            <div class="item">
+                <h2>Dance</h2>
+                <img src="img/dance.jpg" alt="dance music">
+                <h3><a href="#" data-track="media/dance.mp3"> Play</a></h3>
+            </div>
+            <div class="item">
+                <h2>Hip-Hop</h2>
+                <img src="img/hiphop.jpg" alt="hip-hop music">
+                <h3><a href="#" data-track="media/hiphop.mp3"> Play</a></h3>
+            </div>
+            <div class="item">
+                <h2>R&B/Soul</h2>
+                <img src="img/rnb.jpg" alt="r&b music">
+                <h3><a href="#" data-track="media/rnb.mp3"> Play</a></h3>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="audioTitle">Audio Player</h2>
+    <!-- Audio Player -->
+    <div class="audioPlayer">
+
+        <!-- Play Button -->
+        <button id="audioPlayButton" class="music" onclick="playAudio();"></button>
+
+        <!-- Volume Controls -->
+        <div id="volumeControl">
+            <!-- <h2>Volume</h2> -->
+            <!-- Mute Volume  -->
+            <label id="volumeLabel" for="volume" onclick="setVolumeNone();"></label>
+
+            <!-- Put up or down volume -->
+            <input id="volume" type="range" min="0" max="1" step="0.01" value="1" onchange="setVolume(this.value);">
+
+        </div>
+    </div>
+
+    <h2 id="favSongsTitle">Top 5 Favourite Songs</h2>
+
+    <div id="favouriteSongs">
+
+        <!-- Pop Songs -->
+        <div class="popSongsList">
+            <h4>Pop</h4>
+            <ol>
+                <li><a href="https://www.youtube.com/watch?v=oPQ3o14ksaM" target="_blank">Get Busy - <span class="artist">Sean Paul</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=YkyhvCdJ_vM" target="_blank">Fire Burning - <span class="artist">Sean Kingston</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=w4s6H4ku6ZY" target="_blank">Like a G6 - <span class="artist">Far East Movement</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" target="_blank">Blinding Lights - <span class="artist">The Weeknd</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=iO476kD-k0g" target="_blank">Right Thurr - <span class="artist">Chingy</span></a></li>
+            </ol>
+        </div>
+
+        <!-- Rap Songs -->
+        <div class="rapSongsList">
+            <h4>Rap</h4>
+            <ol>
+                <li><a href="https://www.youtube.com/watch?v=0F0CAEoF4XM" target="_blank">Nuthin' but a G Thang - <span class="artist">Dr. Dre</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=TMZi25Pq3T8" target="_blank">Straight Outta Compton - <span class="artist">N.W.A.</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=5qm8PH4xAss" target="_blank">In Da Club - <span class="artist">50 Cent</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=_Yhyp-_hX2s" target="_blank">Lose Yourself - <span class="artist">Eminem</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=fWCZse1iwE0" target="_blank">Gin and Juice - <span class="artist">Snoop Dogg</span></a></li>
+            </ol>
+        </div>
+
+        <!-- Bhangra Songs -->
+        <div class="bhangraSongsList">
+            <h4>Bhangra</h4>
+            <ol>
+                <li><a href="https://www.youtube.com/watch?v=w_HaezV0DqI" target="_blank">Sadi Gali - <span class="artist">Lehmber Hussainpuri</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=6lCbe2iKgF0" target="_blank">Moorni - <span class="artist">Panjabi MC</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=cl0a3i2wFcc" target="_blank">G.O.A.T. - <span class="artist">Diljit Dosanjh</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=GgmFC8y8q3k" target="_blank">So High - <span class="artist">Sidhu Moosewala</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=ZVZLMGCceCE" target="_blank">Door Ni Kulne - <span class="artist">Manni Sandhu</span></a></li>
+            </ol>
+        </div>
+
+        <!-- Dance Songs -->
+        <div class="danceSongsList">
+            <h4>Dance</h4>
+            <ol>
+                <li><a href="https://www.youtube.com/watch?v=CVvJp3d8xGQ" target="_blank">Faded - <span class="artist">Zhu</span> </a></li>
+                <li><a href="https://www.youtube.com/watch?v=Dr1nN__-2Po" target="_blank">Secrets - <span class="artist">Ti&euml;sto</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=_ovdm2yX4MA" target="_blank">Levels - <span class="artist">Avicii</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=gCYcHz2k5x0" target="_blank">Animals - <span class="artist">Martin Garrix</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=HMUDVMiITOU" target="_blank">Turn Down for What - <span class="artist">DJ Snake</span></a></li>
+            </ol>
+        </div>
+
+        <!-- HipHop Songs -->
+        <div class="hiphopSongsList">
+            <h4>Hip-Hop</h4>
+            <ol>
+                <li><a href="https://www.youtube.com/watch?v=GsyJVv-9ygM" target="_blank">Shorty Wanna Ride - <span class="artist">Young Buck</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=UceaB4D0jpo" target="_blank">rockstar - <span class="artist">Post Malone</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=G6XthQpk8uk" target="_blank">The Woo - <span class="artist">Pop Smoke</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=U68MJz9DrI4" target="_blank">Wake Up in The Sky - <span class="artist">Gucci Mane</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=IYH7_GzP4Tg" target="_blank">Get Low - <span class="artist">Lil Jon</span></a></li>
+            </ol>
+        </div>
+
+        <!-- R&B/Soul Songs -->
+        <div class="rnbSongsList">
+            <h4>R&B/Soul</h4>
+            <ol>
+                <li><a href="https://www.youtube.com/watch?v=34Na4j8AVgA" target="_blank">Starboy - <span class="artist">The Weeknd</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=GxBSyx85Kp8" target="_blank">Yeah! - <span class="artist">Usher</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=v0Gu_Yh_keE" target="_blank">Na Na - <span class="artist">Trey Songz</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=rSOzN0eihsE" target="_blank">Beautiful - <span class="artist">Akon</span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=Z9eMk051dYg" target="_blank">Party - <span class="artist">Chris Brown</span></a></li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Return to top button -->
+    <div class="return">
+        <h2><a href="#navbar">Return To Top</a></h2>
+    </div>
+
+    <!-- Linked Song -->
+    <audio id="audio">
+        <source src="media/pop.mp3" type="audio/mpeg" id="audioSource">
+    </audio>
+
+    <!-- footer -->
+    <div id="footer">
+        |<a href="index.html">
+            &emsp;Home&emsp;
+            </a> |
+        <a href="about.html">
+            &emsp;About&emsp;
+            </a> |
+        <a href="tracks.html">
+            &emsp;Tracks&emsp;
+            </a> |
+        <a href="contact.html">
+              &emsp;Contact&emsp;
+              </a>|
+        <p>©2021 BCIT For Educational Purposes Only – Mandeep Sajjan</p>
+    </div>
+
+
+
+
+    <!-- Scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
